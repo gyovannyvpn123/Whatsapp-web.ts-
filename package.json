@@ -1,0 +1,41 @@
+{
+  "name": "@gyovannyvpn123/whatsapp-web-core",
+  "version": "1.0.0",
+  "description": "A fully-featured WhatsApp Web API library written in TypeScript, based on reverse engineering of the official client.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "whatsapp",
+    "whatsapp-web",
+    "whatsapp-api",
+    "typescript",
+    "signal-protocol",
+    "qr-code",
+    "chatbot",
+    "end-to-end-encryption",
+    "messaging",
+    "reverse-engineering"
+  ],
+  "author": "gyovannyvpn123",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.18.2",
+    "qrcode": "^1.5.4",
+    "curve25519-n": "^1.2.1",
+    "https-proxy-agent": "^7.0.6"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "@types/node": "^22.15.21",
+    "@types/ws": "^8.18.1",
+    "ts-node": "^10.9.2"
+  }
+}
