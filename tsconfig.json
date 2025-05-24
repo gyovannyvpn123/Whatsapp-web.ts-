@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                     // Output modern JavaScript
+    "module": "CommonJS",                   // For Node.js compatibility
+    "rootDir": "src",                       // Your .ts source files go here
+    "outDir": "dist",                       // Compiled .js and .d.ts files go here
+    "declaration": true,                    // Generate .d.ts type definitions
+    "esModuleInterop": true,                // Allow default imports from CommonJS
+    "strict": true,                         // Enable all strict type-checking options
+    "skipLibCheck": true                    // Skip type checking of declaration files
+  },
+  "include": ["src"]
+}
