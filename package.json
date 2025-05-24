@@ -1,0 +1,51 @@
+{
+  "name": "@borutowaileys/core",
+  "version": "1.0.0",
+  "description": "A fully-featured WhatsApp Web API library based on the reverse engineering from sigalor/whatsapp-web-reveng.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "whatsapp",
+    "whatsapp-web",
+    "whatsapp-api",
+    "whatsapp-bot",
+    "typescript",
+    "baileys",
+    "chatbot",
+    "signal-protocol",
+    "qr-code",
+    "messaging"
+  ],
+  "author": "borutowaileys",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^22.15.21",
+    "@types/ws": "^8.18.1",
+    "curve25519-n": "^1.2.1",
+    "https-proxy-agent": "^7.0.6",
+    "qrcode": "^1.5.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "ws": "^8.18.2"
+  }
+}
+
