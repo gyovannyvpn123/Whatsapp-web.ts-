@@ -1,0 +1,11 @@
+<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#25D366" />
+      <stop offset="100%" stop-color="#128C7E" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="200" rx="10" fill="#FFFFFF" stroke="url(#gradient)" stroke-width="8" />
+  <text x="400" y="120" font-family="Arial, sans-serif" font-size="64" font-weight="bold" text-anchor="middle" fill="url(#gradient)">WhatsApp Lib</text>
+  <path d="M100,100 m-10,0 a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0 M700,100 m-10,0 a10,10 0 1,0 20,0 a10,10 0 1,0 -20,0" fill="#25D366" />
+</svg>
