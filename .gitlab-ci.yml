@@ -1,0 +1,26 @@
+stages:
+  - build
+  - publish
+
+build:
+  image: node:20
+  stage: build
+  script:
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - dist/
+  only:
+    - main  # sau branch-ul tău principal
+
+publish:
+  image: node:20
+  stage: publish
+  script:
+    - echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+    - npm publish
+  only:
+    - main  # doar din branch-ul principal publică
+  dependencies:
+    - build
